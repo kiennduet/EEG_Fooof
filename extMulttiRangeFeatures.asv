@@ -1,6 +1,6 @@
 %% Extract Features
 
-featuresX = zeros(30, 307, 95); %adjust
+featuresX = zeros(30, , ); %adjust
 
 pgr_cell = cell(1, 30);
 
@@ -20,9 +20,9 @@ for i = 1:30 %adjuts
     featuresX(j,:,:) = ExtractFeaturesF(pgr, 'MS', [1:19], [1:5]); %adjust
 end
 
-file_path = '/home/kiennd/Documents/2_Works/EEG_analysis/data/PGR_Result/PGR_MS';
-file_name = 'MS307.mat'; %adjust
+file_path = 'C:\1_Matlab_function\fooof_mat-main\fooof_mat-main\ex\MachineLearningPython';
+file_name = 'FT91.mat'; %adjust
 save(fullfile(file_path, file_name), 'featuresX');
 
-clear('pgrMS_*'); %adjust
+clear('pgrFT_*');
 
